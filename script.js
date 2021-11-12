@@ -24,7 +24,29 @@ console.log(bigImg);
 document.getElementById('sm-img-container').innerHTML += smallImg;
 document.getElementById('big-img-container').innerHTML = bigImg;
 
-// aggiungo la classe active alla prima immagine
-document.querySelector('.big-img').classList.add('active');
+// do alla prima big-img la classe active
+document.querySelector('.big-img-item').classList.add('active');
+
+// creo una variante che mi selezioni tutte le immagini con classe big-img
+let bigClass = document.getElementsByClassName('big-img-item');
+
+// creo una variabile per indicare il click delle icone
+let downIcon = document.getElementById('down');
+let upIcon = document.getElementById('up'); 
+
+// creo una func per dire che se clicco icona mi deve cambiare le classi delle big-img
+let x = 0;
+downIcon.addEventListener('click', function() {
+  if (x < (bigClass.length - 1)) {
+    bigClass[x].classList.remove('active');
+    x ++;
+    bigClass[x].classList.add('active');
+  }
+})
 
 
+// upIcon.addEventListener('click', function() {
+//   bigClass[y].classList.remove('active');
+//   y ++;
+//   bigClass[y].classList.add('active');
+// })
