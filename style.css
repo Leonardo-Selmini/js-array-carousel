@@ -6,14 +6,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  text-align: center;
-}
-
-h1 {
-  font-size: 55px;
-  color: rgb(28, 28, 30);
-  padding: 30px 0;
+body{
+  padding: 80px 0;
 }
 
 .container {
@@ -23,20 +17,18 @@ h1 {
   margin: auto;
 }
 
+/* BIG IMG */
+
 #big-img-container {
   width: 80%;
   height: 100%;
   padding: 5px;
 }
 
-#sm-img-container {
-  width: 20%;
-  position: relative;
-}
-
 .big-img-item {
   height: 100%;
   display: none;
+  position: relative;
 }
 
 .big-img {
@@ -48,6 +40,34 @@ h1 {
 
 .active {
   display: block;
+  filter: opacity(1) !important;
+}
+
+/* TEXT */
+
+.text-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  background-color: rgba(28, 28, 30, 0.3);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+
+/* SMALL IMG */
+
+#sm-img-container {
+  width: 20%;
+  position: relative;
 }
 
 .sm-img-item {
@@ -61,13 +81,21 @@ h1 {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  filter: opacity(.7);
 }
+
+/* ICONE PULSANTI */
 
 i {
   position: absolute;
+  left: 50%;
   transform: translate(-50%, 0);
   font-size: 25px;
   color: rgba(28, 28, 30, 0.5);
+}
+
+i:hover {
+  color: rgb(10, 132, 255);
 }
 
 .fa-chevron-circle-up {
