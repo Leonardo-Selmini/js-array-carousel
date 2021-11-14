@@ -3,7 +3,7 @@ let foto = ["img/01.jpeg", "img/02.jpeg", "img/03.jpeg", "img/04.jpeg", "img/05.
 
 let titolo = ['Veneto', 'Lombardia', 'Sardegna', 'Puglia', 'Liguria']
 
-let testo = ['Città d\'arte, mare, montagna, terme, laghi e parchi; una bellezza dalle molteplici forme. Non a caso lo slogan turistico è "Veneto, una regione, mille volti". La montagna veneta e le Dolomiti Bellunesi offrono natura incontaminata, mentre la fascia collinare pedemontana regala splendidi borghi e famose Ville Venete.', 'La Lombardia è una regione che comprende molte e interessanti destinazioni turistiche, tra queste la più visitata è la città di Milano, che oltre ad essere il polo industriale e commerciale d\'Italia presenta molte attrazioni turistiche di alto livello come il Duomo, il Castello Sforzesco e il Teatro della Scala.', 'Ricca di montagne, boschi, pianure, territori in gran parte disabitati, corsi d\'acqua, coste rocciose e lunghe spiagge sabbiose, per la varietà dei suoi ecosistemi l\'isola è stata definita un micro-continente. ... Sono rocciose nella zona nord, mentre litorali bassi e sabbiosi si trovano nella zona sud-occidentale.', 'Terra di mare, colli e pianure sconfinate, la Puglia attira visitatori per le sue splendide coste, ma anche per le sue città d’arte e i suoi pittoreschi borghi storici, dove vivono ancora intatte antiche tradizioni religiose, le sue masserie di campagna immerse tra gli uliveti, e i suoi prodotti della terra dal sapore antico e ineguagliabile.', 'La Liguria è tra le regioni più turistiche d\'Italia e del mondo. Ci sono spiagge piccole e rocciose, come quelle nelle Cinque Terre, oppure spiagge lunghe e sabbiose come quelle ad Alassio. Tutto l\'entroterra, grazie ai borghi medievali come Triora, rappresenta un tesoro nascosto in cui ad ogni strada si ha una nuova sorpresa.']
+let testo = ['Città d\'arte, mare, montagna, terme, laghi e parchi; una bellezza dalle molteplici forme. Non a caso lo slogan turistico è "Veneto, una regione, mille volti". La montagna veneta e le Dolomiti Bellunesi offrono natura incontaminata, mentre la fascia collinare pedemontana regala splendidi borghi e famose Ville Venete.', 'La Lombardia è una regione che comprende molte e interessanti destinazioni turistiche, tra queste la più visitata è la città di Milano, che oltre ad essere il polo industriale e commerciale d\'Italia presenta molte attrazioni turistiche di alto livello come il Duomo, il Castello Sforzesco e il Teatro della Scala.', 'Ricca di montagne, boschi, pianure, territori in gran parte disabitati, corsi d\'acqua, coste rocciose e lunghe spiagge sabbiose, per la varietà dei suoi ecosistemi l\'isola è stata definita un micro-continente. ... Sono rocciose nella zona nord, mentre litorali bassi e sabbiosi si trovano nella zona sud-occidentale.', 'Terra di mare, colli e pianure sconfinate, la Puglia attira visitatori per le sue splendide coste, ma anche per le sue città d’arte e i suoi pittoreschi borghi storici, dove vivono ancora intatte le sue masserie di campagna immerse tra gli uliveti e i suoi prodotti della terra dal sapore antico e ineguagliabile.', 'La Liguria è tra le regioni più turistiche d\'Italia e del mondo. Ci sono spiagge piccole e rocciose, come quelle nelle Cinque Terre, oppure spiagge lunghe e sabbiose come quelle ad Alassio. Tutto l\'entroterra, grazie ai borghi medievali come Triora, rappresenta un tesoro nascosto pieno di sorprese.']
 
 // creo un ciclo per inserire le foto nel documento
 let smallImg = '';
@@ -46,6 +46,7 @@ let upIcon = document.getElementById('up');
 // creo una func per dire che se clicco icona mi deve cambiare le classi delle big-img
 let x = 0;
 
+// tasto in giù
 downIcon.addEventListener('click', function() {
   if (x < bigClass.length - 1) {
     bigClass[x].classList.remove('active');
@@ -62,6 +63,7 @@ downIcon.addEventListener('click', function() {
   }
 })
 
+// tasto in sù
 upIcon.addEventListener('click', function() {
   if (x > 0) {
   bigClass[x].classList.remove('active');
